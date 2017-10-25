@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="igloorental" target="1.8" />
+      <module name="igloorental" target="1.5" />
       <module name="ir-property-catalogue" target="1.8" />
       <module name="ir-user" target="1.8" />
     </bytecodeTargetLevel>
