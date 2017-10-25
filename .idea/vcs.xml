@@ -2,5 +2,16 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-image-retrieval" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-image-upload" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-messaging" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-payment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-property-catalogue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-property-listing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-property-rental" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-recommendation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-review" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-user" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ir-web" vcs="Git" />
   </component>
 </project>

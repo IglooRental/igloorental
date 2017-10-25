@@ -1,4 +1,7 @@
+# separate git repos
 ir-*/
+# vim temp files
+*~
 
 ### Java template
 # Compiled class file
