@@ -1,13 +1,20 @@
 #!/usr/bin/env bash
 
-git pull --rebase git@github.com:IglooRental/ir-image-retrieval.git
-git pull --rebase git@github.com:IglooRental/ir-image-upload.git
-git pull --rebase git@github.com:IglooRental/ir-messaging.git
-git pull --rebase git@github.com:IglooRental/ir-payment.git
-git pull --rebase git@github.com:IglooRental/ir-property-catalogue.git
-git pull --rebase git@github.com:IglooRental/ir-property-listing.git
-git pull --rebase git@github.com:IglooRental/ir-property-rental.git
-git pull --rebase git@github.com:IglooRental/ir-recommendation.git
-git pull --rebase git@github.com:IglooRental/ir-review.git
-git pull --rebase git@github.com:IglooRental/ir-user.git
-git pull --rebase git@github.com:IglooRental/ir-web.git
+function updaterepo {
+    echo "Updating $1..."
+    cd $1
+    git pull --rebase
+    cd ..
+}
+
+updaterepo ir-image-retrieval
+updaterepo ir-image-upload
+updaterepo ir-messaging
+updaterepo ir-payment
+updaterepo ir-property-catalogue
+updaterepo ir-property-listing
+updaterepo ir-property-rental
+updaterepo ir-recommendation
+updaterepo ir-review
+updaterepo ir-user
+updaterepo ir-web
