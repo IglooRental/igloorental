@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ir-user" type="JarApplication" factoryName="JAR Application" singleton="true">
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <option name="JAR_PATH" value="$PROJECT_DIR$/ir-user/target/ir-user-1.0.0-SNAPSHOT.jar" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ir-user" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <envs />
+    <method />
+  </configuration>
+</component>
