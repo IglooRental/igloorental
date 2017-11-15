@@ -7,6 +7,268 @@
 	},
 	"item": [
 		{
+			"name": "/health (users)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"health"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/health (properties)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"health"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/metrics (users)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"metrics"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/metrics (properties)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"metrics"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/config (users)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/config (properties)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/setHealth (users)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/setHealth (properties)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/load (users)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/mgmt/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"mgmt",
+						"load"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/load (properties)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/v1/mgmt/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v1",
+						"mgmt",
+						"load"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "/users",
 			"request": {
 				"method": "GET",
@@ -51,33 +313,7 @@
 					"path": [
 						"v1",
 						"users",
-						""
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "/users/config",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8080/v1/users/config",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"v1",
-						"users",
-						"config"
+						"1"
 					]
 				},
 				"description": ""
@@ -103,7 +339,7 @@
 					"path": [
 						"v1",
 						"properties",
-						"config"
+						""
 					]
 				},
 				"description": ""
@@ -130,32 +366,6 @@
 						"v1",
 						"properties",
 						"1"
-					]
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "/properties/config",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "http://localhost:8081/v1/properties/config",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"v1",
-						"properties",
-						"config"
 					]
 				},
 				"description": ""
