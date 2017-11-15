@@ -7,6 +7,7 @@ function updaterepo {
     cd ..
 }
 
+git pull --rebase
 updaterepo ir-image-retrieval
 updaterepo ir-image-upload
 updaterepo ir-messaging
@@ -18,3 +19,4 @@ updaterepo ir-recommendation
 updaterepo ir-review
 updaterepo ir-user
 updaterepo ir-web
+
