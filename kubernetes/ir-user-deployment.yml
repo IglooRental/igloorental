@@ -1,0 +1,24 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: ir-user-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ir-user
+    spec:
+      containers:
+      - image: jm5619/ir-user
+        name: ir-user
+        env:
+          - name: KUMULUZEE_DISCOVERY_ETCD_HOSTS
+            value: http://etcd:2379
+          - name: KUMULUZEE_CONFIG_ETCD_HOSTS
+            value: http://etcd:2379
+        livenessProbe:
+        ports:
+        - containerPort: 8080
+          name: server
+          protocol: TCP
