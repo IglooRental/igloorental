@@ -14,7 +14,7 @@ spec:
         name: ir-user
         env:
           - name: KUMULUZEE_DISCOVERY_CLUSTER
-            value: bluemix
+            value: igloorental
           - name: KUMULUZEE_DISCOVERY_ETCD_HOSTS
             value: http://etcd:2379
           - name: KUMULUZEE_CONFIG_ETCD_HOSTS

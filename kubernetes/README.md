@@ -1,4 +1,4 @@
-##File descriptions
+#File descriptions
 
 ir-\*-deployment-minikube.yml ... deployment configurations, tailored to work with minikube.  
 ir-\*-deployment.yml ............ deployment configurations, tailored to work with IBM cloud  
