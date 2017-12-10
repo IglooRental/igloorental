@@ -2,6 +2,7 @@
 	"info": {
 		"name": "IglooRental",
 		"_postman_id": "c1d05762-5ba4-8219-a40b-c5af5b4ff712",
+		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -152,6 +153,36 @@
 						"v1",
 						"mgmt",
 						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/mgmt/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"mgmt",
+						"info"
 					]
 				}
 			},
