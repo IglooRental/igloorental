@@ -1,0 +1,33 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: ir-property-rental
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ir-property-rental
+    spec:
+      containers:
+      - image: jm5619/ir-property-rental
+        name: ir-property-rental
+        env:
+          - name: KUMULUZEE_DISCOVERY_CLUSTER
+            value: igloorental
+          - name: KUMULUZEE_DISCOVERY_ETCD_HOSTS
+            value: http://etcd:2379
+          - name: KUMULUZEE_CONFIG_ETCD_HOSTS
+            value: http://etcd:2379
+          - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
+            value: jdbc:postgresql://postgres:5432/igloo
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: server
+          initialDelaySeconds: 10
+          periodSeconds: 3
+        ports:
+        - containerPort: 8082
+          name: server
+          protocol: TCP

@@ -53,6 +53,29 @@
 			"response": []
 		},
 		{
+			"name": "/health (property rental)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8082/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/metrics (users)",
 			"request": {
 				"method": "GET",
@@ -109,6 +132,34 @@
 			"response": []
 		},
 		{
+			"name": "/metrics (property rental)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8082/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/config (users)",
 			"request": {
 				"method": "GET",
@@ -149,6 +200,31 @@
 						"localhost"
 					],
 					"port": "8081",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/config (property rental)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8082/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
 					"path": [
 						"v1",
 						"mgmt",
@@ -249,6 +325,36 @@
 			"response": []
 		},
 		{
+			"name": "/mgmt/setHealth (property rental)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8082/v1/mgmt/sethealth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"mgmt",
+						"sethealth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/load (users)",
 			"request": {
 				"method": "POST",
@@ -289,6 +395,31 @@
 						"localhost"
 					],
 					"port": "8081",
+					"path": [
+						"v1",
+						"mgmt",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/load (property rental)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8082/v1/mgmt/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
 					"path": [
 						"v1",
 						"mgmt",

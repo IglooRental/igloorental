@@ -9,3 +9,5 @@ kubectl create -f $DIR/ir-user-deployment.yml
 kubectl create -f $DIR/ir-user-service.yml
 kubectl create -f $DIR/ir-property-catalogue-deployment.yml
 kubectl create -f $DIR/ir-property-catalogue-service.yml
+kubectl create -f $DIR/ir-property-rental-deployment.yml
+kubectl create -f $DIR/ir-property-rental-service.yml
