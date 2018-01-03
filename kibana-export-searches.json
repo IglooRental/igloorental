@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "AWC8F7AmDvkCyA3oTuQo",
+    "_type": "search",
+    "_source": {
+      "title": "[Custom] All method entries",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "message",
+        "contextMap.class",
+        "contextMap.method"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON":
+"{\"index\":\"*-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"query_string\":{\"query\":\"message:\\\"Entering
+method.\\\"\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWC8IZNpDvkCyA3oTuRQ",
+    "_type": "search",
+    "_source": {
+      "title": "[Custom] User service logs",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "contextMap.class",
+        "contextMap.environment",
+        "contextMap.method",
+        "contextMap.applicationVersion",
+        "message"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON":
+"{\"index\":\"*-*\",\"highlightAll\":true,\"version\":true,\"query\":{\"query_string\":{\"query\":\"contextMap.serviceName:\\\"user-service\\\"\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  }
+]
+
