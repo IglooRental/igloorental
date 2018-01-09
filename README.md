@@ -10,6 +10,8 @@ IglooRental master repository.
 
 `ir-property-rental` [![Build Status](https://travis-ci.org/IglooRental/ir-property-rental.svg?branch=master)](https://travis-ci.org/IglooRental/ir-property-rental)
 
+`ir-review` [![Build Status](https://travis-ci.org/IglooRental/ir-review.svg?branch=master)](https://travis-ci.org/IglooRental/ir-review)
+
 ## Notes
 
 To use `etcd` locally, install it and run it with `sudo systemctl start etcd`.

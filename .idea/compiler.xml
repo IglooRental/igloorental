@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ir-property-catalogue" />
         <module name="ir-property-rental" />
+        <module name="ir-review" />
         <module name="ir-user" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="igloorental" target="1.5" />
       <module name="ir-property-catalogue" target="1.8" />
       <module name="ir-property-rental" target="1.8" />
+      <module name="ir-review" target="1.8" />
       <module name="ir-user" target="1.8" />
     </bytecodeTargetLevel>
   </component>

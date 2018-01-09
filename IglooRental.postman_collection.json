@@ -76,6 +76,29 @@
 			"response": []
 		},
 		{
+			"name": "/health (reviews)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8083/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/metrics (users)",
 			"request": {
 				"method": "GET",
@@ -160,6 +183,34 @@
 			"response": []
 		},
 		{
+			"name": "/metrics (reviews)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8083/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/config (users)",
 			"request": {
 				"method": "GET",
@@ -225,6 +276,31 @@
 						"localhost"
 					],
 					"port": "8082",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/config (reviews)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8083/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
 					"path": [
 						"v1",
 						"mgmt",
@@ -355,6 +431,36 @@
 			"response": []
 		},
 		{
+			"name": "/mgmt/setHealth (reviews)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8083/v1/mgmt/sethealth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1",
+						"mgmt",
+						"sethealth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/load (users)",
 			"request": {
 				"method": "POST",
@@ -420,6 +526,31 @@
 						"localhost"
 					],
 					"port": "8082",
+					"path": [
+						"v1",
+						"mgmt",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/load (reviews)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8083/v1/mgmt/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
 					"path": [
 						"v1",
 						"mgmt",
@@ -524,6 +655,56 @@
 						"v1",
 						"properties",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8083/v1/reviews/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1",
+						"reviews",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/reviews/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8083/v1/reviews/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"v1",
+						"reviews",
+						"0"
 					]
 				}
 			},

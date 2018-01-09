@@ -2,6 +2,7 @@
   <configuration default="false" name="Run All igloorental" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
     <toRun type="JarApplication" name="ir-property-catalogue" />
     <toRun type="JarApplication" name="ir-property-rental" />
+    <toRun type="JarApplication" name="ir-review" />
     <toRun type="JarApplication" name="ir-user" />
     <method />
   </configuration>
