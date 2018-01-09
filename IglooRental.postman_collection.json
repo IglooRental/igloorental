@@ -709,6 +709,56 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "/propertyrentals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8082/v1/propertyrentals/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"propertyrentals",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/propertyrentals/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8082/v1/propertyrentals/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v1",
+						"propertyrentals",
+						"0"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
