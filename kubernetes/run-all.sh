@@ -11,5 +11,7 @@ kubectl create -f $DIR/ir-property-catalogue-deployment.yml
 kubectl create -f $DIR/ir-property-catalogue-service.yml
 kubectl create -f $DIR/ir-property-rental-deployment.yml
 kubectl create -f $DIR/ir-property-rental-service.yml
+kubectl create -f $DIR/ir-property-listing-deployment.yml
+kubectl create -f $DIR/ir-property-listing-service.yml
 kubectl create -f $DIR/ir-review-deployment.yml
 kubectl create -f $DIR/ir-reveiw-service.yml

@@ -15,6 +15,7 @@
         <module>ir-user</module>
         <module>ir-property-catalogue</module>
         <module>ir-property-rental</module>
+        <module>ir-property-listing</module>
         <module>ir-review</module>
     </modules>
     <packaging>pom</packaging>

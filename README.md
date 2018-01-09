@@ -10,6 +10,8 @@ IglooRental master repository.
 
 `ir-property-rental` [![Build Status](https://travis-ci.org/IglooRental/ir-property-rental.svg?branch=master)](https://travis-ci.org/IglooRental/ir-property-rental)
 
+`ir-property-listing` [![Build Status](https://travis-ci.org/IglooRental/ir-property-listing.svg?branch=master)](https://travis-ci.org/IglooRental/ir-property-listing)
+
 `ir-review` [![Build Status](https://travis-ci.org/IglooRental/ir-review.svg?branch=master)](https://travis-ci.org/IglooRental/ir-review)
 
 ## Notes

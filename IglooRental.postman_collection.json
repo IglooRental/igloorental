@@ -76,6 +76,29 @@
 			"response": []
 		},
 		{
+			"name": "/health (property listing)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/health (reviews)",
 			"request": {
 				"method": "GET",
@@ -183,6 +206,34 @@
 			"response": []
 		},
 		{
+			"name": "/metrics (property listing)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/metrics (reviews)",
 			"request": {
 				"method": "GET",
@@ -276,6 +327,31 @@
 						"localhost"
 					],
 					"port": "8082",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/config (property listing)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
 					"path": [
 						"v1",
 						"mgmt",
@@ -431,6 +507,36 @@
 			"response": []
 		},
 		{
+			"name": "/mgmt/setHealth (property listing)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8084/v1/mgmt/sethealth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"mgmt",
+						"sethealth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/setHealth (reviews)",
 			"request": {
 				"method": "POST",
@@ -526,6 +632,31 @@
 						"localhost"
 					],
 					"port": "8082",
+					"path": [
+						"v1",
+						"mgmt",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/load (property listing)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/v1/mgmt/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
 					"path": [
 						"v1",
 						"mgmt",
@@ -754,6 +885,56 @@
 					"path": [
 						"v1",
 						"propertyrentals",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/propertylistings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/v1/propertylistings/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"propertylistings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/propertylistings/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8084/v1/propertylistings/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"v1",
+						"propertylistings",
 						"0"
 					]
 				}

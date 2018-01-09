@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ir-property-listing" type="JarApplication" factoryName="JAR Application" singleton="true">
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <option name="JAR_PATH" value="$PROJECT_DIR$/ir-property-listing/target/ir-property-listing-1.0.0-SNAPSHOT.jar" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ir-property-listing" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <envs />
+    <method />
+  </configuration>
+</component>
