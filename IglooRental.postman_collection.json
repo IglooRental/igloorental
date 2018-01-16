@@ -53,6 +53,29 @@
 			"response": []
 		},
 		{
+			"name": "/health (messaging)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/health (properties)",
 			"request": {
 				"method": "GET",
@@ -145,6 +168,29 @@
 			"response": []
 		},
 		{
+			"name": "/health (recommendation)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/metrics (users)",
 			"request": {
 				"method": "GET",
@@ -193,6 +239,34 @@
 						"localhost"
 					],
 					"port": "8085",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/metrics (messaging)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
 					"path": [
 						"metrics"
 					]
@@ -313,6 +387,34 @@
 			"response": []
 		},
 		{
+			"name": "/metrics (recommendation)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/config (users)",
 			"request": {
 				"method": "GET",
@@ -353,6 +455,31 @@
 						"localhost"
 					],
 					"port": "8085",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/config (messaging)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
 					"path": [
 						"v1",
 						"mgmt",
@@ -463,6 +590,31 @@
 			"response": []
 		},
 		{
+			"name": "/mgmt/config (recommendation)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/mgmt/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"mgmt",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/info",
 			"request": {
 				"method": "GET",
@@ -543,6 +695,36 @@
 						"localhost"
 					],
 					"port": "8085",
+					"path": [
+						"v1",
+						"mgmt",
+						"sethealth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/setHealth (messaging)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8086/v1/mgmt/sethealth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
 					"path": [
 						"v1",
 						"mgmt",
@@ -673,6 +855,36 @@
 			"response": []
 		},
 		{
+			"name": "/mgmt/setHealth (recommendation)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "false"
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/mgmt/sethealth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"mgmt",
+						"sethealth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/mgmt/load (users)",
 			"request": {
 				"method": "POST",
@@ -713,6 +925,31 @@
 						"localhost"
 					],
 					"port": "8085",
+					"path": [
+						"v1",
+						"mgmt",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/mgmt/load (messaging)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/v1/mgmt/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
 					"path": [
 						"v1",
 						"mgmt",
@@ -823,6 +1060,31 @@
 			"response": []
 		},
 		{
+			"name": "/mgmt/load (recommendation)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/mgmt/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"mgmt",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "/users",
 			"request": {
 				"method": "GET",
@@ -892,6 +1154,107 @@
 						"v1",
 						"images",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/v1/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/messages/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/v1/messages/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"v1",
+						"messages",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/messages/from/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/v1/messages/from/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"v1",
+						"messages",
+						"from",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/messages/to/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8086/v1/messages/to/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"v1",
+						"messages",
+						"to",
+						"0"
 					]
 				}
 			},
@@ -1016,6 +1379,55 @@
 					"path": [
 						"v1",
 						"reviews",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/recommendations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/recommendations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"recommendations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/recommendations/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8087/v1/recommendations/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8087",
+					"path": [
+						"v1",
+						"recommendations",
 						"0"
 					]
 				}

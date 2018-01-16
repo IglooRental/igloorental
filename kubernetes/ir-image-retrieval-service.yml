@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ir-image-retrieval
+  labels:
+    app: ir-image-retrieval
+spec:
+  type: NodePort
+  ports:
+  - name: server
+    port: 8085
+    protocol: TCP
+    targetPort: 8085
+  selector:
+    app: ir-image-retrieval
